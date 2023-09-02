@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my cccc</title>
+    <style>
+        h1{
+            color: blanchedalmond;
+            background-color: black;
+            text-align: center;
+        }
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: black;
+}
+.li{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: o 25px;
+}
+
+.nav-manu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.nav-barding{
+    font-size: 2rem;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color: rgb(0, 1, 1);
+    text-align: left;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all o.3s ease-in-out;
+    transition: all o.3s ease-in-out;
+    background-color: white;
+}
+@media(max-width:768px){
+    
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active,.bar:nth-child(2){
+        opacity: 0; 
+    }
+    
+    .hamburger.active,.bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+}
+  
+.hamburger.active,.bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.mav-manu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    
+}
+.nav-item{
+    margin: 16px 0;
+
+}
+.nav-manu.active{
+    left: 0;
+}
+
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <a href="#" class="nav-branding">dev.</a>
+        <ul class="nav-manu"> 
+             <li class="nav-item">
+            <a href="#" class="nav-link">home.</a>
+        </li>
+             <li class="nav-item">
+            <a href="#" class="nav-link">news</a>
+        </li>
+             <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+        </li>
+        
+             <li class="nav-item">
+            <a href="#" class="nav-link">contact</a>
+        </li>
+        </ul>
+        <div class="humburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </nav>
+    </header>
+            <h1>my wabsite</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sequi est, 
+            consequuntur eligendi aspernatur doloremque natus! Itaque deserunt voluptatibus sint earum voluptates est quidem aut,
+             corrupti blanditiis atque magnam nulla!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium debitis neque eos 
+            laborum vel perspiciatis, at accusamus ipsa vero dicta,
+             inventore quidem adipisci quae labore enim? Soluta atque aliquam iure.</p>
+    </div>
+</body>
+</html>
